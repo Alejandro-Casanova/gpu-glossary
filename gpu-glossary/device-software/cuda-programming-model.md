@@ -21,7 +21,7 @@ documentation.
 Here, we focus on the CUDA _programming model_.
 
 Per the
-[NVIDIA CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/#a-scalable-programming-model),
+[NVIDIA CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/archive/13.0.0/cuda-c-programming-guide/index.html#a-scalable-programming-model),
 there are three key abstractions in the CUDA programming model:
 
 - [**Hierarchy of thread groups**](/gpu-glossary/device-software/thread-hierarchy).
@@ -63,7 +63,7 @@ more
 [Streaming Multiprocessors](/gpu-glossary/device-hardware/streaming-multiprocessor)),
 more of these blocks can be executed in parallel.
 
-![A CUDA program with eight [blocks](/gpu-glossary/device-software/thread-block) runs in four sequential steps (waves) on a GPU with two [SMs](/gpu-glossary/device-hardware/streaming-multiprocessor) but in half as many steps on one with twice as many [SMs](/gpu-glossary/device-hardware/streaming-multiprocessor). Modified from the [CUDA Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/).](themed-image://wave-scheduling.svg)
+![A CUDA program with eight [blocks](/gpu-glossary/device-software/thread-block) runs in four sequential steps (waves) on a GPU with two [SMs](/gpu-glossary/device-hardware/streaming-multiprocessor) but in half as many steps on one with twice as many [SMs](/gpu-glossary/device-hardware/streaming-multiprocessor). Modified from the [CUDA Programming Guide](https://docs.nvidia.com/cuda/archive/13.0.0/cuda-c-programming-guide/).](themed-image://wave-scheduling.svg)
 
 The CUDA programming model abstractions are made available to programmers as
 extensions to high-level CPU programming languages, like the
